@@ -1,0 +1,312 @@
+html p{
+	font-size: 12px;	
+}	
+.alex{
+	font-family: 'Alex Brush', cursive;	
+}
+.hilal{
+	display: block;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	float: none;
+	z-index: auto;
+	width: auto;
+	height: auto;
+	position: static;
+	opacity: 1;
+	margin: 0;
+	padding: 0;
+	overflow: visible;
+	border: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	font: normal 12px/1 "Helvetica Neue",Helvetica,Arial,sans-serif;
+	color: rgba(255,255,255,1);
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	background: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	text-shadow: 4px 4px 6px rgba(59,60,61,0.91) ;
+	-webkit-transition: none;
+	-moz-transition: none;
+	-o-transition: none;
+	transition: none;
+	-webkit-transform: none;
+	transform: none;
+	-webkit-transform-origin: 50% 50% 0;
+	transform-origin: 50% 50% 0;
+	text-rendering: optimizelegibility;
+}
+
+.captionOrange, .captionBlack
+{
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 2px;
+}
+.captionOrange
+{
+    background: #EB5100;
+    background-color: rgba(235, 81, 0, 0.6);
+}
+.captionBlack
+{
+font-size:14px;
+    background: #000;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+a.captionOrange, A.captionOrange:active, A.captionOrange:visited
+{
+color: #ffffff;
+text-decoration: none;
+}
+a.captionOrange:hover
+{
+    color: #eb5100;
+    text-decoration: underline;
+    background-color: #eeeeee;
+    background-color: rgba(238, 238, 238, 0.7);
+}
+.bricon
+{
+    background: url(../img/browser-icons.png);
+}
+
+
+.captionBlack1, .captionBlack2
+{
+    color: #fff;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    border-radius: 2px;
+}
+.captionBlack1
+{
+    background: ##50494b;
+    background-color: rgba(235, 81, 0, 0.6);
+}
+.captionBlack1
+{
+font-size:11px;
+    background: #000;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+a.captionBlack1, A.captionBlack1:active, A.captionBlack1:visited
+{
+color: #ffffff;
+text-decoration: none;
+}
+a.captionBlack1:hover
+{
+    color: #eb5100;
+    text-decoration: underline;
+    background-color: #eeeeee;
+    background-color: rgba(238, 238, 238, 0.7);
+}
+.bricon
+{
+    background: url(../img/browser-icons.png);
+}
+
+.jssora05l, .jssora05r, .jssora05ldn, .jssora05rdn
+{
+	position: absolute;
+	cursor: pointer;
+	display: block;
+    background: url(http://k-linkcarefoundation.com/bootstrap/img/a17.png) no-repeat;
+    overflow:hidden;
+}
+.jssora05l { background-position: -10px -40px; }
+.jssora05r { background-position: -70px -40px; }
+.jssora05l:hover { background-position: -130px -40px; }
+.jssora05r:hover { background-position: -190px -40px; }
+.jssora05ldn { background-position: -250px -40px; }
+.jssora05rdn { background-position: -310px -40px; }
+
+.jssort01 .w {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.jssort01 .c {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 68px;
+    height: 68px;
+    border: #000 2px solid;
+}
+
+.jssort01 .p:hover .c, .jssort01 .pav:hover .c, .jssort01 .pav .c {
+    background: url(http://k-linkcarefoundation.com/bootstrap/img/t01.png) center center;
+    border-width: 0px;
+    top: 2px;
+    left: 2px;
+    width: 68px;
+    height: 68px;
+}
+
+.jssort01 .p:hover .c, .jssort01 .pav:hover .c {
+    top: 0px;
+    left: 0px;
+    width: 70px;
+    height: 70px;
+    border: #fff 1px solid;
+}
+
+
+
+body {
+	padding-top: 20px;
+	padding-bottom: 60px;
+}
+
+/* Custom container */
+.container {
+	margin: 0 auto;
+	max-width: 1000px;
+}
+.container > hr {
+	margin: 60px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+	margin: 80px 0;
+	text-align: center;
+}
+.jumbotron h1 {
+	font-size: 100px;
+	line-height: 1;
+}
+.jumbotron .lead {
+	font-size: 24px;
+	line-height: 1.25;
+}
+.jumbotron .btn {
+	font-size: 21px;
+	padding: 14px 24px;
+}
+/* Supporting marketing content */
+.marketing {
+	margin: 60px 0;
+}
+.marketing p + h4 {
+	margin-top: 28px;
+}
+/* Customize the navbar links to be fill the entire space of the .navbar */
+.navbar .nav li {
+	display: table-cell;	
+	float: none;	
+	font-weight: 700;
+	text-align: center;
+}
+.navbar .nav {
+	margin: 0;
+	display: table;
+	width: 100%;	
+}
+/*Change the hover color in drop down menu*/
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+  text-decoration: none;
+  color: #333333;
+  background-color: #fff;
+  background-image: -moz-linear-gradient(top, #fff, #fff);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#fff));
+  background-image: -webkit-linear-gradient(top, #fff, #fff);
+  background-image: -o-linear-gradient(top, #fff, #fff);
+  background-image: linear-gradient(to bottom, #fff, #fff);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#fff', GradientType=0);
+}
+.navbar .nav > li > .dropdown-menu:after,
+.navbar .nav > li > .dropdown-menu:before {
+  display: none;
+}
+.navbar .dropdown-menu > li {
+	display: block;
+	padding: 5px 50px 10px 30px;
+	text-align: left;
+}
+.navbar .nav li:first-child a {
+	border-left: 0;
+	border-radius: 3px 0 0 3px;
+}
+.navbar .nav li:last-child a {
+	border-right: 0;
+	border-radius: 0 3px 3px 0;
+}
+
+.subnav{
+	height: 75px;
+	padding: 1px 1px 1px 1px;
+	border-bottom: 1px solid rgba(255,255,255,.75);
+	font-size: 12px;
+}
+
+.subnav .menu{
+	padding: 15px 0px 0px 12px;
+}
+
+.subnav .menu h2{
+	color: #fff;
+}
+
+.nav-tabs > li > a{
+	background-color:#E0E0EB;
+	color: #000; 
+} 
+
+.clear-space{
+	
+	padding: 15px 0px 15px 0px;
+}
+/*Playing with Color*/
+.white{
+	color: #ffffff;
+}
+.green{
+	color: #33CC33;
+}
+.google-map{
+	height: 150px;
+	width: auto;
+	padding-left: 10px;
+}
+.widget ul{
+	list-style-type: none;
+	list-style-position: outside;
+}
+.widget{
+	padding: 17px 0px 0px 0px;
+	font-size: 11px;
+}
+.widget li p{
+	margin:0px;    
+	margin-top:-15px;
+	line-height:12px;
+}
+.widget ul li i{
+	margin-left:-20px;
+}
+.img-icon{
+	float: right;
+	border: solid 5px #fff;
+}
+.pull-right{
+	text-align: center;
+}
+.footer p{
+	text-align: center;
+}

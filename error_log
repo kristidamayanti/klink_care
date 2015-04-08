@@ -1,0 +1,15 @@
+[09-Aug-2014 17:09:36 Asia/Jakarta] PHP Fatal error:  Call to undefined method M_news::getNews() in /home/klinkcare/public_html/application/controllers/home.php on line 26
+[09-Aug-2014 17:21:22 Asia/Jakarta] PHP Fatal error:  Call to undefined method M_news::getNews() in /home/klinkcare/public_html/application/controllers/home.php on line 26
+[09-Aug-2014 17:22:22 Asia/Jakarta] PHP Fatal error:  Call to undefined function character_limiter() in /home/klinkcare/public_html/application/views/vcare/v_utama.php on line 72
+[14-Aug-2014 18:18:51 Asia/Jakarta] PHP Parse error:  syntax error, unexpected 'dropdown' (T_STRING) in /home/klinkcare/public_html/application/views/vcare/include/menu.php on line 25
+[01-Sep-2014 18:35:09 Asia/Jakarta] PHP Fatal error:  Call to undefined function character_limiter() in /home/klinkcare/public_html/application/views/home.php on line 97
+[01-Sep-2014 18:35:12 Asia/Jakarta] PHP Fatal error:  Call to undefined function character_limiter() in /home/klinkcare/public_html/application/views/home.php on line 97
+[03-Sep-2014 13:31:29 Asia/Jakarta] PHP Fatal error:  Cannot redeclare class history in /home/klinkcare/public_html/application/views/history.php on line 0
+[03-Sep-2014 17:09:21 Asia/Jakarta] PHP Fatal error:  Call to a member function getHeaderMenu() on a non-object in /home/klinkcare/public_html/application/controllers/news.php on line 34
+[03-Sep-2014 17:10:18 Asia/Jakarta] PHP Fatal error:  Call to a member function getHeaderMenu() on a non-object in /home/klinkcare/public_html/application/controllers/news.php on line 34
+[03-Sep-2014 17:11:14 Asia/Jakarta] PHP Fatal error:  Call to a member function getHeaderMenu() on a non-object in /home/klinkcare/public_html/application/controllers/news.php on line 34
+[03-Sep-2014 17:11:45 Asia/Jakarta] PHP Fatal error:  Call to a member function getHeaderMenu() on a non-object in /home/klinkcare/public_html/application/controllers/news.php on line 34
+[03-Sep-2014 17:13:09 Asia/Jakarta] PHP Fatal error:  Call to a member function getHeaderMenu() on a non-object in /home/klinkcare/public_html/application/controllers/news.php on line 34
+[12-Feb-2015 13:55:16 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '"', expecting ',' or ';' in /home/klinkcare/public_html/application/views/home.php on line 100
+[12-Feb-2015 13:56:37 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '"', expecting ',' or ';' in /home/klinkcare/public_html/application/views/home.php on line 100
+[12-Feb-2015 13:56:39 Asia/Jakarta] PHP Parse error:  syntax error, unexpected '"', expecting ',' or ';' in /home/klinkcare/public_html/application/views/home.php on line 100
