@@ -19,7 +19,8 @@ class beasiswa extends CI_Controller {
     private $urlFoot = "footers";
     private $urlReturn = "";
 
-    public function __construct() {
+    public function __construct() 
+	{
         parent::__construct();
         $this->urlReturn = get_class($this);
         $this->load->model('menu_model');
@@ -30,18 +31,37 @@ class beasiswa extends CI_Controller {
     }
 
     //put your code here
-    public function index() {
+    public function index() 
+	{
         $data['titlepage'] ='K-Link Care Foundation - Program Beasiswa';
         $data['mHeader'] = $this->menu_model->getHeaderMenu();
         $data['mChild'] = $this->menu_model->getChildMenu();
 		$data['hasilsyarat'] = $this->syr->mlihatSyr();	
 		$data['hasilposter'] = $this->bea->mlihatPoster();	
 		$data['penerima'] = $this->bea->mlihatPenerima();	
+		$data['periode'] = $this->bea->mlihatPeriod();
 
         $this->load->view($this->urlConfig, $data);
         $this->load->view($this->urlMenu, $data);
         $this->load->view($this->urlReturn, $data);
         $this->load->view($this->urlFoot, $data);
     }
+	public function lookPeriod()
+	{	
+		$periode=$this->input->post('periode');
+	
+		$data['titlepage'] ='K-Link Care Foundation - Program Beasiswa';
+        $data['mHeader'] = $this->menu_model->getHeaderMenu();
+        $data['mChild'] = $this->menu_model->getChildMenu();
+		$data['hasilsyarat'] = $this->syr->mlihatSyr();	
+		$data['hasilposter'] = $this->bea->mlihatPoster();	
+		$data['periode'] = $this->bea->mlihatPeriod();
+		$data['penerima']=$this->bea->getPeriod($periode);
+
+        $this->load->view($this->urlConfig, $data);
+        $this->load->view($this->urlMenu, $data);
+        $this->load->view($this->urlReturn, $data);
+        $this->load->view($this->urlFoot, $data);
+	}
 
 }

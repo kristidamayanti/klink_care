@@ -9,17 +9,20 @@
     <div class="span12 subnav">
         <div class="span4 alex menu"><h2>Programs</h2></div>
         <div class="span4 menu offset4 pull-right">
-            <div class="btn-group">
-                <button class="btn">Periode Pendaftaran Beasiswa</button>
-                <button class="btn dropdown-toggle" data-toggle="dropdown">
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Tahun Ajaran 2014/2015</a></li>
-                    <li><a href="#">Tahun Ajaran 2013/2014</a></li>
-                    <li><a href="#">Tahun Ajaran 2012/2013</a></li>
-                </ul>
-            </div>
+				<?php echo form_open('beasiswa/lookPeriod');?>
+				<select class="form-control" name="periode">
+					<option value="">- Lihat Berdasarkan -</option>
+					<?php foreach($periode as $row):
+					echo
+						'<option value="'.$row->periode.'">Tahun Ajaran '.$row->periode.'</option>';
+					endforeach;
+					?>
+				</select>
+				<button type="submit" class="btn btn-default btn-sm pull-right" name="kirim">
+					<img src="<?php echo base_url().'gambar/icon/search.png';?>" height="15" width="15">
+				</button>
+                <?php echo form_close();?>
+
         </div>                    
     </div>
 </div>
@@ -102,6 +105,7 @@
 						<table class="tableizer-table">
 							<tr class="tableizer-firstrow">
 								<th>No</th>
+								<th>Periode</th>
 								<th>Nama</th>
 								<th>Tempat/Tgl lahir</th>
 								<th>Jenis kelamin</th>
@@ -117,6 +121,7 @@
 								echo
 								'<tr>'.
 									'<td>'.$no.'</td>'.
+									'<td>'.$data->periode.'</td>'.
 									'<td>'.$data->nama.'</td>'.
 									'<td>'.$data->ttl.'</td>'.
 									'<td>'.$data->jk.'</td>'.

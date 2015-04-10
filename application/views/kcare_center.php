@@ -23,78 +23,16 @@
     </div>
 </div>
 
-<div class="row">                      
+<div class="row">   
+<?php foreach($look as $row) : ?>                   
     <div class="span3">            
         <div class="thumbnail height4">
-            <img class="img-responsive" src="<?php echo base_url(); ?>images/center.jpg" alt="">
+            <img class="img-responsive" src="<?php echo base_url().$row->image; ?>" alt="">
             <div class="caption">
-                <p class="text-center">Kegiatan Soft Opening Cads Center</p>                                            
+                <p class="text-center"><?php echo $row->title;?></p>                                            
             </div>
         </div>            
     </div>
-    <div class="span3">            
-        <div class="thumbnail height4">
-            <img class="img-responsive" src="<?php echo base_url(); ?>images/center1.jpg" alt="">
-            <div class="caption">
-                <p class="text-center">Kegiatan Soft Opening Cads Center</p>                                            
-            </div>
-        </div>            
-    </div>
-    <div class="span3">            
-        <div class="thumbnail height4">
-            <img class="img-responsive" src="<?php echo base_url(); ?>images/center2.jpg" alt="">
-            <div class="caption">
-                <p class="text-center">Kegiatan Soft Opening Cads Center</p>                                            
-            </div>
-        </div>            
-    </div>    
-    <div class="span3">            
-        <div class="thumbnail height4">
-            <img class="img-responsive" src="<?php echo base_url(); ?>images/center3.jpg" alt="">
-            <div class="caption">
-                <p class="text-center">Kegiatan Soft Opening Cads Center</p>                                            
-            </div>
-        </div>            
-    </div>
-    <div class="span3">            
-        <div class="thumbnail height4">
-            <img class="img-responsive" src="<?php echo base_url(); ?>images/peletakan.jpg" alt="">
-            <div class="caption">
-                <p class="text-center">Peletakan Batu Pertama </p>                                            
-            </div>
-        </div>            
-    </div>
-    <div class="span3">
-        <div class="thumbnail height4">
-            <img class="img-responsive" src="<?php echo base_url(); ?>images/peletakan1.jpg" alt="">
-            <div class="caption">
-                <p class="text-center">Peletakan Batu Pertama </p>                                            
-            </div>
-        </div>
-    </div>
-    <div class="span3">
-        <div class="thumbnail height4">
-            <img class="img-responsive" src="<?php echo base_url(); ?>images/peletakan2.jpg" alt="">
-            <div class="caption">
-                <p class="text-center">Peletakan Batu Pertama </p>                                            
-            </div>
-        </div>
-    </div>
-    <div class="span3">
-        <div class="thumbnail height4">
-            <img class="img-responsive" src="<?php echo base_url(); ?>images/peletakan3.jpg" alt="">
-            <div class="caption">
-                <p class="text-center">Peletakan Batu Pertama </p>                                            
-            </div>
-        </div>
-    </div>
-    <div class="span3">
-        <div class="thumbnail height4">
-            <img class="img-responsive" src="<?php echo base_url(); ?>images/peletakan4.jpg" alt="">
-            <div class="caption">
-                <p class="text-center">Peletakan Batu Pertama </p>                                            
-            </div>
-        </div>
-    </div>    
+<?php endforeach;?>   
 </div>
 <hr>
