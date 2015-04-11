@@ -1,16 +1,4 @@
 <?php
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- * Description of 404
- *
- * @author sahid
- */
 class gallery extends CI_Controller {
 
     //put your code here
@@ -51,8 +39,8 @@ class gallery extends CI_Controller {
         		
         $data['listCatGallery'] = $this->m_gallery->getCatGallery();
         $cat_id = $this->uri->segment(3);
-        $data['listGallery'] = $this->m_gallery->getAllGalleryByCatID($cat_id);
-
+		$data['listGallery'] = $this->m_gallery->getAllGalleryByCatID($cat_id);
+		
         $this->load->view($this->urlConfig, $data);
         $this->load->view($this->urlMenu, $data);
         $this->load->view($this->urlReturn, $data); 

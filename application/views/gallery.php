@@ -18,7 +18,7 @@
 							$showCatGallery = '';
 						    foreach ($listCatGallery as $dataCat) {
 								$gallerycat_id 	= $dataCat->gallerycat_id;
-								$catDesc 		= $dataCat->description;
+								$catDesc 		= $dataCat->namecat;
 
 		        				$urlCatGallery = base_url('assets/upload/img/galeri/'.$gallerycat_id);
 								
@@ -57,18 +57,16 @@
 			        $i++;
 			        $gallery_id = $data->gallery_id;
 					$gallerycat_id = $data->gallerycat_id;
-					//$gallery_title = $data->title;
 					$gallery_description = $data->description;
-					//$gallery_filename = $data->gallery_filename;
-					$gallery_image = $data->images;
+					$gallery_image = '%20'.$data->images;
 					$gallery_createdt = $data->galdate;		
 					
-			        $urlGallery = base_url('gallery/'.$gallery_id);
+			        $urlGallery = base_url('assets/upload/img/galeri/'.$gallery_image);
 					
 					$showGallery = '<div>
-						                <img u="image" src="'.base_url().'images/galeri/'.$gallery_image.'" />
-						                <img u="thumb" src="'.base_url().'images/galeri/thumb/'.$gallery_image.'" />
-										<div u=caption t="*" class="captionOrange"  style="position:absolute; left:0px; top: 322px; width:300px; height:20px;">'.$gallery_title.'</div>
+						                <img u="image" src="'.base_url().'assets/upload/img/galeri/'.$gallery_image.'" />
+						                <img u="thumb" src="'.base_url().'assets/upload/img/galeri/'.$gallery_image.'" />
+										
 										<div u=caption t="*" class="captionBlack1"  style="position:absolute; left:0px; top: 341px; width:800px; height:15px;">'.$gallery_description.'</div>	
 						            </div>';
 					echo $showGallery;

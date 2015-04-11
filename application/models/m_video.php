@@ -29,14 +29,14 @@ class M_video extends CI_Model{
 	
 	public function getAllvideo2(){
 		$data = $this->input->post(NULL, TRUE);
-		$qry = "SELECT * FROM video ORDER BY video_createdt desc,videocat_id,video_title";
+		$qry = "SELECT * FROM video ORDER BY datevid desc,videocat_id,video_title";
 		$query = $this->db->query($qry);
     	return $query->result_object();
 	}  
 	
 	public function getvideoByID($video_id){
 		$data = $this->input->post(NULL, TRUE);
-		$qry = "SELECT * FROM video WHERE $$video_id='$video_id' ORDER BY video_createdt desc";
+		$qry = "SELECT * FROM video WHERE $$video_id='$video_id' ORDER BY datevid desc";
 		$query = $this->db->query($qry);
     	return $query->result_object();
 	}  
