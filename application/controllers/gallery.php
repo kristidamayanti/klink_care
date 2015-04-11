@@ -32,13 +32,12 @@ class gallery extends CI_Controller {
 		/*$this->load->view('gallery_test');*/
     }
 	
-	public function category() {
+	public function category($cat_id=0) {
         $data['titlepage'] = 'K-Link Care Foundation - Gallerys';
         $data['mHeader'] = $this->menu_model->getHeaderMenu();
         $data['mChild'] = $this->menu_model->getChildMenu();
         		
         $data['listCatGallery'] = $this->m_gallery->getCatGallery();
-        $cat_id = $this->uri->segment(3);
 		$data['listGallery'] = $this->m_gallery->getAllGalleryByCatID($cat_id);
 		
         $this->load->view($this->urlConfig, $data);
