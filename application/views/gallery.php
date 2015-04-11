@@ -20,7 +20,7 @@
 								$gallerycat_id 	= $dataCat->gallerycat_id;
 								$catDesc 		= $dataCat->namecat;
 
-		        				$urlCatGallery = base_url('assets/upload/img/galeri/'.$gallerycat_id);
+		        				$urlCatGallery = site_url('gallery/category/'.$gallerycat_id);
 								
 								echo '<li><h4 class="alex"><a href="'.$urlCatGallery.'" class="hilal">'.$catDesc.'</a></h3></li>';
 								}
