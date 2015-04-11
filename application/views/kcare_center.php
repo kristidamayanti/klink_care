@@ -33,6 +33,15 @@
             </div>
         </div>            
     </div>
+	
 <?php endforeach;?>   
+</div>
+<div class="col-md-12">
+	<?php 
+	echo 
+	'<p class="text-center">';
+	echo $pagination;
+	echo '</p>';
+	?>
 </div>
 <hr>

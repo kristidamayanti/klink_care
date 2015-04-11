@@ -28,16 +28,15 @@ class news_model extends CI_Model
 	{
 		date_default_timezone_set('Asia/Jakarta');
 		$tgl = date("Y-m-d H:i:s");
-		$url = $_FILES["pic"]["name"];
+		//$url = $_FILES["pic"]["name"];
 		
 		$title=$this->input->post('title');
 		$isi=$this->input->post('isi');
 			
 		$data = array(
-				'title' => $title,
-				'image' => $url,
-				'isi' 	=> $isi,
-				'date'	=> $tgl
+				'title'		=> $title,
+				'isi' 		=> $isi,
+				'dateNews'	=> $tgl
 				);
 		$this->db->where('id',$id);
 		$this->db->update('news',$data);

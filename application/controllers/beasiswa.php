@@ -38,8 +38,9 @@ class beasiswa extends CI_Controller {
         $data['mChild'] = $this->menu_model->getChildMenu();
 		$data['hasilsyarat'] = $this->syr->mlihatSyr();	
 		$data['hasilposter'] = $this->bea->mlihatPoster();	
-		$data['penerima'] = $this->bea->mlihatPenerima();	
-		$data['periode'] = $this->bea->mlihatPeriod();
+		$data['periode'] = $this->bea->mlihatPenerima();
+		$data['hasil'] = $this->bea->mlihatPeriode();		
+		
 
         $this->load->view($this->urlConfig, $data);
         $this->load->view($this->urlMenu, $data);
@@ -55,7 +56,7 @@ class beasiswa extends CI_Controller {
         $data['mChild'] = $this->menu_model->getChildMenu();
 		$data['hasilsyarat'] = $this->syr->mlihatSyr();	
 		$data['hasilposter'] = $this->bea->mlihatPoster();	
-		$data['periode'] = $this->bea->mlihatPeriod();
+		$data['periode'] = $this->bea->mlihatPenerima();
 		$data['penerima']=$this->bea->getPeriod($periode);
 
         $this->load->view($this->urlConfig, $data);

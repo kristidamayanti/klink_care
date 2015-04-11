@@ -33,9 +33,8 @@ class Adm_news extends CI_Controller {
 	
 	public function updateNews($id)
 	{	
-		$this->output->enable_profiler(true);
-		$url = $this->do_upload();		
-		$this->news->mupdateNews($id,$url);
+		
+		$this->news->mupdateNews($id);
 		redirect('Adm_side_bar/news');
 	}
 	

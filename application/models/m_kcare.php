@@ -8,9 +8,15 @@ class m_kcare extends CI_Model
 		$this->db->insert('kcare');
 	}	
 	
-	public function mlihatKcare($count)
+	public function mlihatKcare()
 	{
-		$lihat = "select * from kcare where periode='$count' order by id asc";
+		$lihat = "select * from kcare order by id desc";
+		$look = $this->db->query($lihat);
+		return $look->result();
+	}
+	public function pageKcare($limit, $offset)
+	{
+		$lihat = "select * from kcare order by id desc limit $limit offset $offset";
 		$look = $this->db->query($lihat);
 		return $look->result();
 	}

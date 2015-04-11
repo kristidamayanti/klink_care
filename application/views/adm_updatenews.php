@@ -43,17 +43,17 @@ $tglsekarang = date("d-m-Y", $tanggal);
 								<input type="text" class="form-control" name="title" value="<?php echo $hasil->title;?>">
 							</div>
 						</div><br><br>
-						<div class="form-group">
+						<!--<div class="form-group">
 							<div class="col-sm-2 col-sm-2">
-								<img src="<?php echo base_url().'assets/upload/img/news/'.$hasil->image;?>" class="img-responsive"><br>
-								<?php echo $hasil->image;?>
+								<img src="<?php //echo base_url().'assets/upload/img/news/'.$hasil->image;?>" class="img-responsive"><br>
+								<?php //echo $hasil->image;?>
 							</div>
 							
 							<div class="col-sm-10">
 								<label>Ganti gambar?</label>
-								<input type="file" class="form-control" name="pic" value="<?php echo $hasil->image;?>">
+								<input type="file" class="form-control" name="pic" value="<?php //echo $hasil->image;?>">
 							</div>
-						</div><br><br><br><br><br><br><br><br>
+						</div><br><br><br><br><br><br><br><br> -->
 						<div class="form-group">
 							<label class="col-sm-2 col-sm-2 control-label">Isi Berita</label><br><br>
 							<div class="col-lg-12">

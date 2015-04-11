@@ -116,7 +116,7 @@
 							
 							<?php
 							$no=0;
-							foreach($penerima as $data):
+							foreach($hasil as $data):
 								$no++;
 								echo
 								'<tr>'.

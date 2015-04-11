@@ -24,9 +24,9 @@ class m_beasiswa extends CI_Model
 			return $hasil;
 		}
 	}
-	public function mlihatPenerima()
+	public function mlihatPeriode()
 	{
-		$qry = "select * from beapenerima";
+		$qry = "select * from beapenerima where periode=(select max(periode) from beapenerima) order by id asc";
 		$query = $this->db->query($qry);
 		if($query->num_rows()>0)
 		{
@@ -38,7 +38,7 @@ class m_beasiswa extends CI_Model
 		}
 	}
 	
-	public function mlihatPeriod()
+	public function mlihatPenerima()
 	{
 		$qry = "select * from beapenerima group by periode desc";
 		$query = $this->db->query($qry);
@@ -50,12 +50,6 @@ class m_beasiswa extends CI_Model
 			}
 			return $hasil;
 		}
-	}
-	public function dbcount()
-	{
-		$lihat = "select periode from kcare order by periode desc limit 1";
-		$look = $this->db->query($lihat);
-		return $look->result();
 	}
 	
 	public function getPeriod($periode)

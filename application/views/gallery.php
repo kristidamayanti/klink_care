@@ -18,9 +18,9 @@
 							$showCatGallery = '';
 						    foreach ($listCatGallery as $dataCat) {
 								$gallerycat_id 	= $dataCat->gallerycat_id;
-								$catDesc 		= $dataCat->catDesc;
+								$catDesc 		= $dataCat->description;
 
-		        				$urlCatGallery = base_url('gallery/category/'.$gallerycat_id);
+		        				$urlCatGallery = base_url('assets/upload/img/galeri/'.$gallerycat_id);
 								
 								echo '<li><h4 class="alex"><a href="'.$urlCatGallery.'" class="hilal">'.$catDesc.'</a></h3></li>';
 								}
@@ -57,11 +57,11 @@
 			        $i++;
 			        $gallery_id = $data->gallery_id;
 					$gallerycat_id = $data->gallerycat_id;
-					$gallery_title = $data->gallery_title;
-					$gallery_description = $data->gallery_description;
-					$gallery_filename = $data->gallery_filename;
-					$gallery_image = $data->gallery_image;
-					$gallery_createdt = $data->gallery_createdt;		
+					//$gallery_title = $data->title;
+					$gallery_description = $data->description;
+					//$gallery_filename = $data->gallery_filename;
+					$gallery_image = $data->images;
+					$gallery_createdt = $data->galdate;		
 					
 			        $urlGallery = base_url('gallery/'.$gallery_id);
 					

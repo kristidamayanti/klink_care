@@ -45,7 +45,7 @@ include 'adm_side_bar.php';
 											echo
 											'<tr>';
 
-												//nama
+												//periode
 												if($data[0] == NULL)
 												{
 													echo 
@@ -56,7 +56,7 @@ include 'adm_side_bar.php';
 													echo 
 													'<td>'.$data[0].'</td>';
 												}
-												//ttl
+												//nama
 												if($data[1] == NULL)
 												{
 													echo 
@@ -67,7 +67,7 @@ include 'adm_side_bar.php';
 													echo 
 													'<td>'.$data[1].'</td>';
 												}
-												//jk
+												//ttl
 												if($data[2] == NULL)
 												{
 													echo 
@@ -78,7 +78,7 @@ include 'adm_side_bar.php';
 													echo 
 													'<td>'.$data[2].'</td>';
 												}
-												//kelas
+												//jk
 												if($data[3] == NULL)
 												{
 													echo 
@@ -89,7 +89,7 @@ include 'adm_side_bar.php';
 													echo 
 													'<td>'.$data[3].'</td>';
 												}
-												//namasekolah
+												//kelas
 												if($data[4] == NULL)
 												{
 													echo 
@@ -100,7 +100,7 @@ include 'adm_side_bar.php';
 													echo 
 													'<td>'.$data[4].'</td>';
 												}
-												//alamatsekolah
+												//namasekolah
 												if($data[5] == NULL)
 												{
 													echo 
@@ -110,6 +110,17 @@ include 'adm_side_bar.php';
 												{
 													echo 
 													'<td>'.$data[5].'</td>';
+												}
+												//alamatsekolah
+												if($data[6] == NULL)
+												{
+													echo 
+													'<td>Null</td>';
+												}
+												else
+												{
+													echo 
+													'<td>'.$data[6].'</td>';
 												}
 											echo '</tr>';
 											}

@@ -19,7 +19,7 @@ class M_gallery extends CI_Model{
 	
 	public function getAllGallery(){
 		$data = $this->input->post(NULL, TRUE);
-		$qry = "select * from `gallery` b where b.gallerycat_id = (select gallerycat_id from `gallerycat` LIMIT 1)";
+		$qry = "select * from gallery where gallery.gallerycat_id = (select gallerycat_id from gallerycat LIMIT 1)";
 		$query = $this->db->query($qry);
 		//$this->db->order_by('gallery_createdt','gallerycat_id','gallery_title');
 		//$query=$this->db->get('gallery');

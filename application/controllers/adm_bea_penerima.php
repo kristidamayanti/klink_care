@@ -26,12 +26,13 @@ class Adm_bea_penerima extends CI_Controller{
 			foreach ($csv_array as $rows):
 
 				$array_csv = array(
-					'nama'			=> str_replace(",", "", $rows[0]),
-					'ttl'			=> str_replace(",", "", $rows[1]),
-					'jk'			=> str_replace(",", "", $rows[2]),
-					'kelas'			=> str_replace(",", "", $rows[3]),
-					'namasekolah'	=> str_replace(",", "", $rows[4]),
-					'alamatsekolah'	=> str_replace(",", "", $rows[5]),
+					'periode'		=> str_replace(",", "", $rows[0]),
+					'nama'			=> str_replace(",", "", $rows[1]),
+					'ttl'			=> str_replace(",", "", $rows[2]),
+					'jk'			=> str_replace(",", "", $rows[3]),
+					'kelas'			=> str_replace(",", "", $rows[4]),
+					'namasekolah'	=> str_replace(",", "", $rows[5]),
+					'alamatsekolah'	=> str_replace(",", "", $rows[6]),
 					);
 
 				$this->csv->insert($array_csv);
