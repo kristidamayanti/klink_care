@@ -52,12 +52,12 @@
 								$video_title = $data->title;
 								$video_description = $data->desc;
 								$video_filename = $data->link;
-								$img = substr($data->vid_img, 6,100); // ngambil nama file
-								$video_image = base_url('video/'.$img);
+								$img = substr($data->vid_img, 24,100); // ngambil nama file
+								$video_image = base_url('assets/upload/img/video/'.$img);
 								$video_createdt = $data->datevid;
-								$videoPath = base_url('video/'.$video_id);
-								$imgPath = base_url('video/'.$video_image);
-								//http://localhost/k-linkcarefoundation/video/thumb/k-linklogo-tn.gif
+								$videoPath = base_url('assets/upload/img/video/'.$video_id);
+								$imgPath = base_url('assets/upload/img/video/'.$video_image);
+								
 								echo '<ul class="amazingslider-slides" style="display:none;">
 										<li>
 											<img src="'.$video_image.'" alt="'.$video_title.'" data-description="'.$video_description.'" />

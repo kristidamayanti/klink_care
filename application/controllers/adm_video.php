@@ -59,7 +59,7 @@ class Adm_video extends CI_Controller
 	{
 		$type = explode('.', $_FILES["pic"]["name"]);
 		$type = $type[count($type)-1];
-		$url = "video/".uniqid(rand()).'.'.$type;
+		$url = "assets/upload/img/video/".uniqid(rand()).'.'.$type;
 		if(in_array($type, array("png","jpg","jpeg","gif")))
 		{
 			if(is_uploaded_file($_FILES["pic"]["tmp_name"]))
