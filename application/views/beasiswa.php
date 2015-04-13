@@ -78,7 +78,10 @@
                     <div class="span4">                        
                         <div class="caption">                    
                             <p>Download Formulir Disini</p>
-                            <a href="<?php echo base_url();?>assets/upload/file/FORMULIR-beasiswa-k-link-care-final.doc" class="btn btn-success"><i class="icon-download-alt"></i> Download</a>
+							<?php
+							$fl=substr($file[0]->file, 2,100);
+							?>
+                            <a href="<?php echo base_url().$fl;?>" class="btn btn-success"><i class="icon-download-alt"></i> Download</a>
                         </div>
                     </div>
                     <div class="span4"></div>

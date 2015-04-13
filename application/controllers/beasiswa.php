@@ -39,7 +39,8 @@ class beasiswa extends CI_Controller {
 		$data['hasilsyarat'] = $this->syr->mlihatSyr();	
 		$data['hasilposter'] = $this->bea->mlihatPoster();	
 		$data['periode'] = $this->bea->mlihatPenerima();
-		$data['hasil'] = $this->bea->mlihatPeriode();		
+		$data['hasil'] = $this->bea->mlihatPeriode();	
+		$data['file'] = $this->bea->lihatFile();
 		
 
         $this->load->view($this->urlConfig, $data);

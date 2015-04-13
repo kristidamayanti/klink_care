@@ -65,6 +65,20 @@ class m_beasiswa extends CI_Model
 			return $hasil;
 		}
 	}
+	
+	public function lihatFile()
+	{
+		$qry = "select * from beadownload order by id desc limit 1";
+		$query = $this->db->query($qry);
+		if($query->num_rows()>0)
+		{
+			foreach($query->result() as $look)
+			{
+				$hasil[]=$look;
+			}
+			return $hasil;
+		}
+	}
 
 }
 ?>
