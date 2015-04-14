@@ -53,7 +53,7 @@ include 'adm_side_bar.php';
 										</td>
 										<td>
 											<a href="<?php echo site_url("Adm_video/delCat/").'/'.$row->videocat_id;?>">
-												<img src="<?php echo base_url(); ?>gambar/icon/del.png" alt="Hapus File?" width="15" height="15">
+												<img src="<?php echo base_url(); ?>gambar/icon/del.png" onClick="return tanya()" width="15" height="15">
 											</a>
 											&nbsp;&nbsp;
 											<a href="<?php echo site_url("Adm_video/editCat/").'/'.$row->videocat_id;?>">
@@ -94,6 +94,17 @@ include 'adm_side_bar.php';
 			</section>
       </section><!-- /MAIN CONTENT -->
 
+	 <!-- js -->
+	 <script language="javascript">
+		function tanya() 
+		{if (confirm ("Apakah Anda yakin akan menghapus album ini ? Semua foto dalam album ini akan di hapus.")) 
+			{return true;
+				} else 
+				{return false;
+			}
+		}
+	</script>
+	 
       <!--main content end-->
       <?php
    include 'adm_footer.php';

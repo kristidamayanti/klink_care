@@ -22,6 +22,7 @@ class video_model extends CI_Model
 		$row = $query->row();
 
 		$this->db->delete('videocat', array('videocat_id' => $videocat_id));
+		$this->db->delete('video1', array('videocat_id' => $videocat_id));
 	 
 	}
 	

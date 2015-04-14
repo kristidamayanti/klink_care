@@ -10,7 +10,7 @@ class news_model extends CI_Model
 	
 	public function save($title,$url,$isi,$tgl)
 	{
-		$this->db->set('date',$tgl);
+		$this->db->set('dateNews',$tgl);
 		$this->db->set('isi',$isi);
 		$this->db->set('title',$title);
 		$this->db->set('image',$url);

@@ -113,7 +113,7 @@ echo '<p><img height="140" width="140" class="img-circle img-icon" src="' . base
         <hr>      
     </div> <!-- /container -->
     <div class="footer">
-        <p align="center">&copy; K-Link Care Foundation 2013 - 2015 | <a href="<?php echo site_url("adm_login");?>">Admin</a></p></p>
+        <p align="center">&copy; K-Link Care Foundation 2013 - 2015 | <a href="<?php echo site_url("adm_login");?>">Admin</a></p>
         <p align="center">K-Link Tower 11th Floor, Jl Gatot Subroto Kav 59A, Jakarta Selatan 12910</p>
     </div>
 
