@@ -158,7 +158,7 @@ class MY_Upload extends CI_Upload {
          * 	  due to security concerns, hence the function_exists() checks
          */
         if (DIRECTORY_SEPARATOR !== "\\") {
-            $cmd = "file --brief --mime " . escapeshellarg($tmp_name) . " 2>&1";
+            $cmd = "file --brief --mime " . $this->my_escapeshellarg($tmp_name) . " 2>&1";
 
             if (function_exists("exec")) {
                 /* This might look confusing, as $mime is being populated with all of the output when set in the second parameter.
@@ -441,6 +441,12 @@ class MY_Upload extends CI_Upload {
 
         //Return all file upload data.
         return TRUE;
+    }
+
+    private function my_escapeshellarg($input) {
+        $input = str_replace('\'', '\\\'', $input);
+
+        return '\'' . $input . '\'';
     }
 
 }
