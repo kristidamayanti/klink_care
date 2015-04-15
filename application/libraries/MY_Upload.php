@@ -443,7 +443,7 @@ class MY_Upload extends CI_Upload {
         return TRUE;
     }
 
-    private function my_escapeshellarg($input) {
+    public function my_escapeshellarg($input) {
         $input = str_replace('\'', '\\\'', $input);
 
         return '\'' . $input . '\'';
