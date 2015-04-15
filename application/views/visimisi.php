@@ -7,8 +7,8 @@
 
 ?><div class="row-fluid">
     <div class="span12 subnav">
-        <div class="span4 alex menu"><h2>Visi & Misi</h2></div>
-        <div class="span4 menu offset4 pull-right"><p>home > visi & misi</p></div>          
+        <div class="span4 alex menu"><h2>Vision & Mission</h2></div>
+        <div class="span4 menu offset4 pull-right"><p>Home > Vision & Mission</p></div>          
     </div>
 </div>
 

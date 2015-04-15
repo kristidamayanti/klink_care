@@ -7,7 +7,7 @@
 ?>
 <div class="row-fluid">
     <div class="span12 subnav">
-        <div class="span4 alex menu"><h2>History's</h2></div>
+        <div class="span4 alex menu"><h2>History</h2></div>
         <div class="span4 menu offset4 pull-right"><p>home > history's</p></div>          
     </div>
 </div>

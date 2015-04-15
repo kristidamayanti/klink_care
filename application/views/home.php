@@ -8,7 +8,7 @@
 <body>
     <div class="container">
         <div class="masthead">
-            <div class="logo"><img alt="" src="<?php echo base_url(); ?>images/logo.png"> </div>
+            <div class="logo"><a href="<?php echo site_url(); ?>"><img alt="" src="<?php echo base_url(); ?>images/logo.png"></a></div>
             <h3 class="muted"></h3>        
             <div class="navbar">
                 <div class="navbar-inner">            
