@@ -9,7 +9,7 @@
 /**
  * Description of visimisi
  *
- * @author sahid
+ * @author sahid and k
  */
 class carefounder extends CI_Controller {
 
