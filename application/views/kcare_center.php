@@ -1,10 +1,3 @@
-<?php
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-?>
 <style type="text/css">
     .height4 {
         margin-top: 20px;
@@ -24,24 +17,23 @@
 </div>
 
 <div class="row">   
-<?php foreach($look as $row) : ?>                   
-    <div class="span3">            
-        <div class="thumbnail height4">
-            <img class="img-responsive" src="<?php echo base_url().$row->image; ?>" alt="">
-            <div class="caption">
-                <p class="text-center"><?php echo $row->title;?></p>                                            
-            </div>
-        </div>            
-    </div>
-	
-<?php endforeach;?>   
+    <?php foreach ($look as $row): ?>                   
+        <div class="span3">            
+            <div class="thumbnail height4" style="background-color: #c2c2c2">
+                <img class="img-responsive" src="<?php echo base_url() . $row->image; ?>" alt="">
+                <div class="caption">
+                    <p class="text-center"><?php echo $row->title; ?></p>                                            
+                </div>
+            </div>            
+        </div>
+    <?php endforeach; ?>   
 </div>
 <div class="col-md-12">
-	<?php 
-	echo 
-	'<p class="text-center">';
-	echo $pagination;
-	echo '</p>';
-	?>
+    <?php
+    echo
+    '<p class="text-center">';
+    echo $pagination;
+    echo '</p>';
+    ?>
 </div>
 <hr>
