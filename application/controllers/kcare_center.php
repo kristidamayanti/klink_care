@@ -18,7 +18,7 @@ class kcare_center extends CI_Controller {
     private $urlMenu = "menus";
     private $urlFoot = "footers";
     private $urlReturn = "";
-    private $limit = 9;
+    private $limit = 6;
 
     public function __construct() {
         parent::__construct();

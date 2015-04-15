@@ -19,9 +19,9 @@
 <div class="row">   
     <?php foreach ($look as $row): ?>                   
         <div class="span3">            
-            <div class="thumbnail height4" style="background-color: #c2c2c2">
+            <div class="thumbnail height4" style="background-color: #F0F0EE">
                 <img class="img-responsive" src="<?php echo base_url() . $row->image; ?>" alt="">
-                <div class="caption">
+                <div class="caption" style="background-color: #c2c2c2; max-height:60px;">
                     <p class="text-center"><?php echo $row->title; ?></p>                                            
                 </div>
             </div>            
