@@ -117,7 +117,15 @@
 									font-weight: bold;
 								}
 								</style>
-						
+								<?php
+								if(empty($smp)) :
+								
+									echo 'no data';
+								
+								else :
+								
+								
+								?>
 								<center>
 									<table class="tableizer-table">
 									<tr class="tableizer-firstrow">
@@ -150,7 +158,7 @@
 										'</tr>';
 									endforeach;
 									
-									
+									endif;
 									?>
 									</table>
 								</center>
@@ -175,7 +183,13 @@
 									font-weight: bold;
 								}
 								</style>
-								
+								<?php
+								if(empty($sma)) :
+									
+										echo 'No data found';
+									
+								else :
+								?>
 								<center>
 									<table class="tableizer-table">
 									<tr class="tableizer-firstrow">
@@ -208,6 +222,7 @@
 											'<td>'.$data->alamatsekolah.'</td>'.
 										'</tr>';
 									endforeach;
+									endif;
 									?>
 									</table>
 								</center>
