@@ -28,7 +28,7 @@ include 'adm_side_bar.php';
 							<?php 
 							else:
 								$count = count($csvdata);
-								echo form_open('Adm_bea_penerima');
+								echo form_open('adm_bea_penerima');
 							?>
 									<div class="alert alert-success" role="alert">
 										<?php echo '( '.$count.' )'.' Records founds to Import';?>
@@ -56,7 +56,7 @@ include 'adm_side_bar.php';
 													echo 
 													'<td>'.$data[0].'</td>';
 												}
-												//nama
+												//status
 												if($data[1] == NULL)
 												{
 													echo 
@@ -67,7 +67,7 @@ include 'adm_side_bar.php';
 													echo 
 													'<td>'.$data[1].'</td>';
 												}
-												//ttl
+												//nama
 												if($data[2] == NULL)
 												{
 													echo 
@@ -78,7 +78,7 @@ include 'adm_side_bar.php';
 													echo 
 													'<td>'.$data[2].'</td>';
 												}
-												//jk
+												//ttl
 												if($data[3] == NULL)
 												{
 													echo 
@@ -89,7 +89,7 @@ include 'adm_side_bar.php';
 													echo 
 													'<td>'.$data[3].'</td>';
 												}
-												//kelas
+												//jk
 												if($data[4] == NULL)
 												{
 													echo 
@@ -100,7 +100,7 @@ include 'adm_side_bar.php';
 													echo 
 													'<td>'.$data[4].'</td>';
 												}
-												//namasekolah
+												//kelas
 												if($data[5] == NULL)
 												{
 													echo 
@@ -111,7 +111,7 @@ include 'adm_side_bar.php';
 													echo 
 													'<td>'.$data[5].'</td>';
 												}
-												//alamatsekolah
+												//namasekolah
 												if($data[6] == NULL)
 												{
 													echo 
@@ -121,6 +121,17 @@ include 'adm_side_bar.php';
 												{
 													echo 
 													'<td>'.$data[6].'</td>';
+												}
+												//alamatsekolah
+												if($data[7] == NULL)
+												{
+													echo 
+													'<td>Null</td>';
+												}
+												else
+												{
+													echo 
+													'<td>'.$data[7].'</td>';
 												}
 											echo '</tr>';
 											}

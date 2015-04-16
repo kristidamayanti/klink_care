@@ -27,18 +27,19 @@ class Adm_bea_penerima extends CI_Controller{
 
 				$array_csv = array(
 					'periode'		=> str_replace(",", "", $rows[0]),
-					'nama'			=> str_replace(",", "", $rows[1]),
-					'ttl'			=> str_replace(",", "", $rows[2]),
-					'jk'			=> str_replace(",", "", $rows[3]),
-					'kelas'			=> str_replace(",", "", $rows[4]),
-					'namasekolah'	=> str_replace(",", "", $rows[5]),
-					'alamatsekolah'	=> str_replace(",", "", $rows[6]),
+					'status'		=> str_replace(",", "", $rows[1]),
+					'nama'			=> str_replace(",", "", $rows[2]),
+					'ttl'			=> str_replace(",", "", $rows[3]),
+					'jk'			=> str_replace(",", "", $rows[4]),
+					'kelas'			=> str_replace(",", "", $rows[5]),
+					'namasekolah'	=> str_replace(",", "", $rows[6]),
+					'alamatsekolah'	=> str_replace(",", "", $rows[7]),
 					);
-
+				//$array_csv = strtoupper($array_csv);
 				$this->csv->insert($array_csv);
 
 			endforeach;                                              
-			redirect('Adm_bea_penerima/upload');
+			redirect('adm_bea_penerima/upload');
 		endif;
 	}
 
@@ -59,7 +60,7 @@ class Adm_bea_penerima extends CI_Controller{
 		
 		$config = array
 		(
-			'upload_path' => FCPATH.'assets/upload/csv/',
+			'upload_path' =>'assets/upload/csv/',
 			'allowed_types' => 'csv|txt',				
 			'overwrite' => TRUE,
 		);
@@ -70,11 +71,10 @@ class Adm_bea_penerima extends CI_Controller{
 
 		if (!$this->upload->do_upload()):		
 			$error = array('error' => $this->upload->display_errors('<div class="alert alert-error"> ','</div>'));
-			
-			$this->load->view('uploadcsv', $error);
+			$this->load->view('adm_upload_error', $error);
 		else:		
 			$data = array('upload_data' => $this->upload->data());
-			redirect('Adm_bea_penerima');
+			redirect('adm_bea_penerima');
 		endif;
 	}
 		

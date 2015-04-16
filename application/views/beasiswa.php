@@ -87,55 +87,136 @@
                     <div class="span4"></div>
                 </div>
 
-                <div class="tab-pane" id="tab4">                    
-                    <style type="text/css">
-                        table.tableizer-table {
-                            border: 1px solid #CCC; font-family: Arial, Helvetica, sans-serif;
-                            font-size: 12px;
-                        } 
-                        .tableizer-table td {
-                            padding: 4px;
-                            margin: 3px;
-                            border: 1px solid #ccc;
-                        }
-                        .tableizer-table th {
-                            background-color: #9E330E; 
-                            color: #FFF;
-                            font-weight: bold;
-                        }
-                    </style>
-					<center>
-						<table class="tableizer-table">
-							<tr class="tableizer-firstrow">
-								<th>No</th>
-								<th>Periode</th>
-								<th>Nama</th>
-								<th>Tempat/Tgl lahir</th>
-								<th>Jenis kelamin</th>
-								<th>Kelas</th>
-								<th>Nama Sekolah</th>
-								<th>Alamat Sekolah</th>
-							</tr>
+                <div class="tab-pane" id="tab4">   
+					<div class="tabbable"> <!-- Only required for left/right tabs -->  
+						<ul class="nav nav-tabs">
+							<li class="active">
+								<a href="#smp" data-toggle="tab">Siswa SMP</a>
+							</li>
+							<li>
+								<a href="#sma" data-toggle="tab">Siswa SMA</a>
+							</li>
+						</ul> 
+						
+						<div class="tab-content">
+							<!-- SMP-->
+							<div class="tab-pane active" id="smp">
+								<style type="text/css">
+								table.tableizer-table {
+									border: 1px solid #CCC; font-family: Arial, Helvetica, sans-serif;
+									font-size: 12px;
+								} 
+								.tableizer-table td {
+									padding: 4px;
+									margin: 3px;
+									border: 1px solid #ccc;
+								}
+								.tableizer-table th {
+									background-color: #9E330E; 
+									color: #FFF;
+									font-weight: bold;
+								}
+								</style>
+						
+								<center>
+									<table class="tableizer-table">
+									<tr class="tableizer-firstrow">
+										<th>No</th>
+										<th>Periode</th>
+										<th>Jenjang</th>
+										<th>Nama</th>
+										<th>Tempat/Tgl lahir</th>
+										<th>Jenis kelamin</th>
+										<th>Kelas</th>
+										<th>Nama Sekolah</th>
+										<th>Alamat Sekolah</th>
+									</tr>
+									
+									<?php
+									$no=0;
+									foreach($smp as $data) :
+									$no++;
+										echo
+										'<tr>'.
+											'<td>'.$no.'</td>'.
+											'<td>'.$data->periode.'</td>'.
+											'<td>'.$data->status.'</td>'.
+											'<td>'.$data->nama.'</td>'.
+											'<td>'.$data->ttl.'</td>'.
+											'<td>'.$data->jk.'</td>'.
+											'<td>'.$data->kelas.'</td>'.
+											'<td>'.$data->namasekolah.'</td>'.
+											'<td>'.$data->alamatsekolah.'</td>'.
+										'</tr>';
+									endforeach;
+									
+									
+									?>
+									</table>
+								</center>
+								
+							</div>
 							
-							<?php
-							$no=0;
-							foreach($hasil as $data):
-								$no++;
-								echo
-								'<tr>'.
-									'<td>'.$no.'</td>'.
-									'<td>'.$data->periode.'</td>'.
-									'<td>'.$data->nama.'</td>'.
-									'<td>'.$data->ttl.'</td>'.
-									'<td>'.$data->jk.'</td>'.
-									'<td>'.$data->kelas.'</td>'.
-									'<td>'.$data->namasekolah.'</td>'.
-									'<td>'.$data->alamatsekolah.'</td>'.
-								'</tr>';
-							endforeach;
-							?>
-						</table>
-					</center>
+							<!-- SMA-->
+							<div class="tab-pane active" id="sma">
+								<style type="text/css">
+								table.tableizer-table {
+									border: 1px solid #CCC; font-family: Arial, Helvetica, sans-serif;
+									font-size: 12px;
+								} 
+								.tableizer-table td {
+									padding: 4px;
+									margin: 3px;
+									border: 1px solid #ccc;
+								}
+								.tableizer-table th {
+									background-color: #9E330E; 
+									color: #FFF;
+									font-weight: bold;
+								}
+								</style>
+								
+								<center>
+									<table class="tableizer-table">
+									<tr class="tableizer-firstrow">
+										<th>No</th>
+										<th>Periode</th>
+										<th>Jenjang</th>
+										<th>Nama</th>
+										<th>Tempat/Tgl lahir</th>
+										<th>Jenis kelamin</th>
+										<th>Kelas</th>
+										<th>Nama Sekolah</th>
+										<th>Alamat Sekolah</th>
+									</tr>
+									
+									<?php
+									$no=0;
+									foreach($sma as $data) :
+										
+										$no++;
+										echo
+										'<tr>'.
+											'<td>'.$no.'</td>'.
+											'<td>'.$data->periode.'</td>'.
+											'<td>'.$data->status.'</td>'.
+											'<td>'.$data->nama.'</td>'.
+											'<td>'.$data->ttl.'</td>'.
+											'<td>'.$data->jk.'</td>'.
+											'<td>'.$data->kelas.'</td>'.
+											'<td>'.$data->namasekolah.'</td>'.
+											'<td>'.$data->alamatsekolah.'</td>'.
+										'</tr>';
+									endforeach;
+									?>
+									</table>
+								</center>
+							</div>
+						</div>
+							
+							
+						</div>
+					</div>
                 </div>
 
             </div>

@@ -24,9 +24,23 @@ class m_beasiswa extends CI_Model
 			return $hasil;
 		}
 	}
-	public function mlihatPeriode()
+	public function mlihatPeriodeSMP()
 	{
-		$qry = "select * from beapenerima where periode=(select max(periode) from beapenerima) order by id asc";
+		$qry = "select * from beapenerima where periode=(select max(periode) from beapenerima) and status='SMP' order by id asc";
+		$query = $this->db->query($qry);
+		if($query->num_rows()>0)
+		{
+			foreach($query->result() as $look)
+			{
+				$hasil[]=$look;
+			}
+			return $hasil;
+		}
+	}
+	
+	public function mlihatPeriodeSMA()
+	{
+		$qry = "select * from beapenerima where periode=(select max(periode) from beapenerima) and status='SMA' order by id asc";
 		$query = $this->db->query($qry);
 		if($query->num_rows()>0)
 		{
@@ -52,9 +66,23 @@ class m_beasiswa extends CI_Model
 		}
 	}
 	
-	public function getPeriod($periode)
+	public function getPeriodSMP($periode)
 	{
-		$qry = "select * from beapenerima where periode='$periode'";
+		$qry = "select * from beapenerima where periode='$periode' and status='SMP'";
+		$query = $this->db->query($qry);
+		if($query->num_rows()>0)
+		{
+			foreach($query->result() as $look)
+			{
+				$hasil[]=$look;
+			}
+			return $hasil;
+		}
+	}
+	
+	public function getPeriodSMA($periode)
+	{
+		$qry = "select * from beapenerima where periode='$periode' and status='SMA'";
 		$query = $this->db->query($qry);
 		if($query->num_rows()>0)
 		{
